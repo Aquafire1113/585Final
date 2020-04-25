@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jungle Cook | Create</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+   <nav>
+    <img class="logo" src="images/logo.png" alt="Logo">
+
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="browse.html">Browse</a>
+      <a href="create.html" class="activeNav">Create Recipe</a>
+      <a href="recipes.html">Your Recipes</a>
+      <a href="login.html" class="login">Login</a>
+    </div>
+    <div class="menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+  </div>
+   </nav>
+
+   <section class="navigation">
+    <p class="closeModal">X</p>
+   <div class="navLinks">
+     <a href="index.html">Home</a>
+     <a href="browse.html">Browse</a>
+     <a href="create.html">Create Recipe</a>
+     <a href="recipes.html">Your Recipes</a>
+     <a href="login.html" class="login">Login</a>
+    </div>
+  </section>
+
+   <section id="create">
+      <h1 class="pageHeader">Create your recipe!</h1>
+      <input type="file" id="image" class="createInput" placeholder="Add Recipe Image" accept="image/*">
+
+      <input type="text" id="name" class="createInput" placeHolder="Recipe Name">
+
+      <input type="text" id="desc" class="createInput" placeHolder="Recipe Description">
+
+      <input type="text" id="time" class="createInput" placeHolder="Recipe Total Time">
+
+      <input type="number" id="servingSize" class="createInput" placeHolder="Recipe Serving Size">
+      
+      <h2 class="createSubheader">Enter Ingredients:</h2>
+      <div class="addIngredientButton" onclick="addIngredient()">+</div>
+      <div class="ingredientHolder"></div>
+
+      <h2 class="createSubheader">Enter Instructions:</h2>
+      <div class="addIngredientButton" onclick="addInstruction()">+</div>
+      <div class="instructionHolder"></div>
+
+      <input class="submitRecipe" type="submit" value="Create Recipe">
+   </section>
+
+
+   <footer>
+     <div class="footerDiv">
+       Copyright &copy; 2019 The Jungle Cook
+     </div>
+     <div class="footerDiv">
+       <a href="login.html">Login</a>
+       <a href="browse.html">Recipes by Category</a>
+       Privacy and Copyright
+       <a href="create.html">Create Recipe</a>
+       <a href="recipes.html">Your Recipes</a>
+     </div>
+     <div class="footerDiv">
+      <i class="fab fa-facebook-square icon"></i>
+      <i class="fab fa-instagram icon"></i>
+     </div>
+   </footer>
+   
+   <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <!-- <script defer src="/__/firebase/7.14.0/firebase-auth.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/7.14.1//firebase-database.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/7.14.1/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-storage.js"></script>
+    <!-- <script defer src="/__/firebase/init.js"></script> -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+   <script src="js/service.js"></script>
+   <script src="js/addRecipe.js"></script>
+   <script src="js/app.js"></script>
+   
+  </body>
+</html>

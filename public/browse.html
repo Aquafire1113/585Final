@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jungle Cook | Browse</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+   <nav>
+    <img class="logo" src="images/logo.png" alt="Logo">
+
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="browse.html" class="activeNav">Browse</a>
+      <a href="create.html">Create Recipe</a>
+      <a href="recipes.html">Your Recipes</a>
+      <a href="login.html" class="login">Login</a>
+    </div>
+    <div class="menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+  </div>
+   </nav>
+
+   <section class="navigation">
+    <p class="closeModal">X</p>
+   <div class="navLinks">
+     <a href="index.html">Home</a>
+     <a href="browse.html">Browse</a>
+     <a href="create.html">Create Recipe</a>
+     <a href="recipes.html">Your Recipes</a>
+     <a href="login.html" class="login">Login</a>
+    </div>
+  </section>
+
+   <section id="browse">
+    <h1 class="pageHeader">Recipes: Try some today!</h1>
+    <div class="recipeBox">
+      <div class="recipe">
+        <img class="recipeImage" src="images/recipe-pizza.jpg" alt="supreme pizza">
+        <div class="recipeDiv">
+          <h3 class="recipeName">Supreme Pizza</h3>
+          <p class="recipeDesc">Make pizza super duper out of this world with homemade pizza. This recipe is supreme with vegetables and two types of meat. Yum!</p>
+          <div class="iconDiv">
+            <img class="recipeIcon" src="images/time.svg" alt="timer icon">
+            <p class="recipeDesc">1hr 24min</p> 
+          </div>
+          <div class="iconDiv">
+            <img class="recipeIcon" src="images/servings.svg" alt="timer icon">
+            <p class="recipeDesc">4 servings</p> 
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe">
+        <img class="recipeImage" src="images/recipe-burger.jpg" alt="supreme pizza">
+        <div class="recipeDiv">
+          <h3 class="recipeName">Classic Burger</h3>
+          <p class="recipeDesc">Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef. Skip the prepackaged patties and take time to craft up your own, and that little extra effort will be worth it.</p>
+          <div class="iconDiv">
+            <img class="recipeIcon" src="images/time.svg" alt="timer icon">
+            <p class="recipeDesc">30 min</p> 
+          </div>
+          <div class="iconDiv">
+            <img class="recipeIcon" src="images/servings.svg" alt="timer icon">
+            <p class="recipeDesc">4 servings</p> 
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe">
+        <img class="recipeImage" src="images/recipe-pilaf.jpg" alt="Chicken Briyani">
+        <div class="recipeDiv">
+          <h3 class="recipeName">Chicken Briyani</h3>
+          <p class="recipeDesc">Chicken briyani is a bold and flavorful indian dish with crazy tender bites of chicken with bell peppers in a deliciously spliced and fragrant rice.</p>
+          <div class="iconDiv">
+            <img class="recipeIcon" src="images/time.svg" alt="timer icon">
+            <p class="recipeDesc">1hr 15 min</p> 
+          </div>
+          <div class="iconDiv">
+            <img class="recipeIcon" src="images/servings.svg" alt="timer icon">
+            <p class="recipeDesc">6 servings</p> 
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe">
+        <img class="recipeImage" src="images/recipe-chowmein.jpg" alt="Chow mein">
+        <div class="recipeDiv">
+          <h3 class="recipeName">Ch. Chow Mein</h3>
+          <p class="recipeDesc">A great Chow Mein comes down to the sauce. It takes more than just soy sauce and sugar! Jam packed with a surprising amount of hidden vegetables. Customize this recpie using a protein of your choice!</p>
+          <div class="iconDiv">
+            <img class="recipeIcon" src="images/time.svg" alt="timer icon">
+            <p class="recipeDesc">20 min</p> 
+          </div>
+          <div class="iconDiv">
+            <img class="recipeIcon" src="images/servings.svg" alt="timer icon">
+            <p class="recipeDesc">4 servings</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+   <footer>
+     <div class="footerDiv">
+       Copyright &copy; 2019 The Jungle Cook
+     </div>
+     <div class="footerDiv">
+       <a href="login.html">Login</a>
+       <a href="browse.html">Recipes by Category</a>
+       Privacy and Copyright
+       <a href="create.html">Create Recipe</a>
+       <a href="recipes.html">Your Recipes</a>
+     </div>
+     <div class="footerDiv">
+      <i class="fab fa-facebook-square icon"></i>
+      <i class="fab fa-instagram icon"></i>
+     </div>
+   </footer>
+  
+   <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <!-- <script defer src="/__/firebase/7.14.0/firebase-auth.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/7.14.1//firebase-database.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/7.14.1/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-storage.js"></script>
+    <!-- <script defer src="/__/firebase/init.js"></script> -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+   <script src="js/service.js"></script>
+   <script src="js/app.js"></script>
+   
+  </body>
+</html>

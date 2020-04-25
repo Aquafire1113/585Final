@@ -1,0 +1,628 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px; }
+
+nav {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 99; }
+
+.links a {
+  font-family: 'Caveat', cursive;
+  color: black;
+  text-decoration: none;
+  font-size: 25px; }
+
+.activeNav {
+  border-bottom: 3px solid black; }
+
+.links {
+  margin-right: 100px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-around; }
+
+.logo {
+  margin-left: 100px;
+  color: white;
+  font-family: 'Caveat', cursive; }
+
+.login {
+  background-color: #FFD972;
+  padding: 10px;
+  border-radius: 15px;
+  width: 100px;
+  text-align: center;
+  color: black;
+  box-shadow: 0px 10px 6px #00000029; }
+
+.menu {
+  height: 30%;
+  width: 100px;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  cursor: pointer; }
+
+.line {
+  width: 50px;
+  height: 5px;
+  background-color: black; }
+
+.navigation {
+  height: 100%;
+  width: 100%;
+  background-color: #EFA7A7;
+  z-index: 99;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column; }
+
+.showNav {
+  display: flex;
+  position: fixed; }
+
+.hideNav {
+  display: none; }
+
+.navLinks {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column; }
+
+.navLinks a {
+  font-family: 'Caveat', cursive;
+  color: black;
+  text-decoration: none;
+  font-size: 25px; }
+
+.closeModal {
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-right: -650px;
+  cursor: pointer; }
+
+@media screen and (max-width: 1024px) {
+  .links {
+    display: none; }
+  .menu {
+    display: flex; } }
+
+#home {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(242, 92, 84, 0.6), rgba(242, 92, 84, 0.6)), url("../images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.calloutBig {
+  height: 400px;
+  width: 400px;
+  border-radius: 100%;
+  background-color: #FFD972;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 98; }
+
+.calloutSmall {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  background-color: #FCBCB8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 97;
+  margin-left: -80px;
+  margin-top: -300px; }
+
+.smallHeader {
+  font-family: 'Caveat', cursive;
+  font-size: 28px; }
+
+.subText {
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  width: 200px; }
+
+.italicText {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  width: 130px;
+  font-style: italic; }
+
+footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: -100px; }
+
+.footerDiv {
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  color: #393939; }
+
+.footerDiv a {
+  margin: 10px;
+  text-decoration: none;
+  color: #393939; }
+
+.icon {
+  font-size: 30px; }
+
+#browse {
+  height: 200%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(167, 232, 189, 0.6), rgba(167, 232, 189, 0.6)), url("../images/recipe-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.pageHeader {
+  font-family: 'Caveat', cursive;
+  margin-top: 140px;
+  margin-left: -700px; }
+
+.recipeBox {
+  height: 120%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.recipe {
+  width: 600px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.recipeImage {
+  height: 100%;
+  width: 55%;
+  border-radius: 30px;
+  object-fit: cover; }
+
+.recipeDiv {
+  height: 100%;
+  width: 45%;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.recipeName {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  border-bottom: 3px solid black;
+  width: 150px; }
+
+.recipeDesc {
+  font-family: "Lato", sans-serif;
+  text-align: left;
+  width: 70%; }
+
+.iconDiv {
+  width: 30%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.recipeIcon {
+  height: 30px;
+  width: 30px;
+  object-fit: cover; }
+
+@media screen and (max-width: 1024px) {
+  #browse {
+    height: 450%; } }
+
+#loginSection {
+  min-height: 100%;
+  width: 100%;
+  background-color: #FFD972;
+  display: flex; }
+
+.half {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.loginHeader {
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 15px; }
+
+.loginHeaderSmall {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: italic; }
+
+.loginInput {
+  background-color: #FFD972;
+  border-style: none;
+  outline: none;
+  border-bottom: 3px solid black;
+  font-family: "Lato", sans-serif;
+  height: 30px;
+  font-size: 20px;
+  width: 300px;
+  margin: 15px; }
+
+::placeholder {
+  color: black; }
+
+.button {
+  height: 30px;
+  width: 150px;
+  border-radius: 25px;
+  background-color: #FFD972;
+  box-shadow: 0px 10px 6px #00000029;
+  border-style: none;
+  height: 30px;
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  margin: 15px; }
+
+@media screen and (max-width: 1024px) {
+  #loginSection {
+    flex-direction: column;
+    height: 200%;
+    align-items: center;
+    justify-content: center; } }
+
+#create {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 100px; }
+
+.createInput {
+  width: 80%;
+  border-style: none;
+  border-bottom: 3px solid black;
+  outline: none;
+  font-size: 20px;
+  height: 30px;
+  font-family: "Lato", sans-serif;
+  margin: 15px; }
+
+::placeholder {
+  color: black; }
+
+.submitImage {
+  font-family: "Caveat", cursive;
+  background-color: #EFA7A7;
+  padding: 10px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 30px;
+  border-style: none;
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+  font-size: 20px;
+  margin-left: -100px;
+  margin-top: -25px; }
+
+.createSubheader {
+  font-family: "Lato", sans-serif;
+  margin-left: -700px;
+  padding-top: 50px; }
+
+.ingredientHolder {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.instructionHolder {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.addIngredientButton {
+  background-color: #EFA7A7;
+  color: white;
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+  border-style: none;
+  font-size: 26px;
+  cursor: pointer;
+  margin-left: -700px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.submitRecipe {
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+  height: 50px;
+  width: 300px;
+  border-radius: 30px;
+  background-color: #EFA7A7;
+  box-shadow: 0px 10px 6px #00000029;
+  border-style: none;
+  cursor: pointer; }
+
+#yourRecipes {
+  height: 200%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(167, 232, 189, 0.6), rgba(167, 232, 189, 0.6)), url("../images/recipe-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.yourBox {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.yourRecipeBox {
+  height: 600px;
+  width: 680px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column; }
+
+.yourRecipe {
+  width: 680px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.yourImage {
+  height: 100%;
+  width: 55%;
+  border-radius: 30px;
+  object-fit: cover;
+  position: relative; }
+
+.viewButton {
+  position: absolute;
+  transform: translate(-100%);
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #FFD972;
+  font-family: "Caveat", cursive;
+  box-shadow: 0px 10px 6px #00000029;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; }
+
+.recipeDiv {
+  height: 100%;
+  width: 45%;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.recipeName {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  border-bottom: 3px solid black;
+  font-size: 20px;
+  width: 150px; }
+
+.recipeDesc {
+  font-family: "Lato", sans-serif;
+  text-align: left;
+  width: 50%; }
+
+.iconDiv {
+  width: 50%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.recipeIcon {
+  height: 50px;
+  width: 50px;
+  object-fit: cover; }
+
+.buttonBox {
+  display: flex; }
+
+.recipeButton {
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #FFD972;
+  font-family: "Caveat", cursive;
+  box-shadow: 0px 10px 6px #00000029;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 25px; }
+
+.updateModalOpen {
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #FFD972;
+  font-family: "Caveat", cursive;
+  box-shadow: 0px 10px 6px #00000029;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 25px; }
+
+.deleteRecipe {
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #FFD972;
+  font-family: "Caveat", cursive;
+  box-shadow: 0px 10px 6px #00000029;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 25px; }
+
+#update {
+  min-height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 98;
+  background-color: white; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: flex;
+  position: fixed; }
+
+.updateRecipe {
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+  height: 50px;
+  width: 300px;
+  border-radius: 30px;
+  background-color: #EFA7A7;
+  box-shadow: 0px 10px 6px #00000029;
+  border-style: none;
+  cursor: pointer; }
+
+#view {
+  min-height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 98;
+  background-color: white; }
+
+.recipeTop {
+  height: 400px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.displayRecipeImage {
+  height: 300px;
+  width: 400px; }
+
+.recipeBegins {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column; }
+
+.recipeHeader {
+  font-family: "Lato", sans-serif;
+  font-size: 25px; }
+
+.recipeSubheader {
+  font-family: "Lato", sans-serif;
+  font-size: 20px; }
+
+.recipeBeginsFont {
+  font-family: "Caveat", cursive;
+  font-size: 20px; }
+
+.recipeBottom {
+  min-height: 300px;
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column; }
+
+#update .createInput {
+  font-size: 15px;
+  height: 30px; }
+
+#update .createSubheader {
+  font-size: 20px;
+  margin-top: -20px; }
+
+#updaate .pageHeader {
+  margin-top: -50px; }
+
+@media screen and (max-width: 1024px) {
+  #yourRecipes {
+    height: 450%; } }

@@ -1,0 +1,94 @@
+#browse{
+    height:200%;
+    width:100%;
+    background-image: 
+    linear-gradient(
+        to bottom, 
+        rgba(167, 232, 189, .6),
+        rgba(167, 232, 189, .6)
+    ),
+    url("../images/recipe-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pageHeader{
+    font-family: 'Caveat', cursive;
+    margin-top:140px;
+    margin-left:-700px;
+}
+
+.recipeBox{
+    height:120%;
+    width:90%;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+.recipe{
+    width:600px;
+    height:450px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.recipeImage{
+    height:100%;
+    width: 55%;
+    border-radius:30px;
+    object-fit:cover;
+}
+
+.recipeDiv{
+    height:100%;
+    width:45%;
+    background-color:white;
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.recipeName{
+    font-family:"Lato", sans-serif;
+    font-weight:bold;
+    border-bottom:3px solid black;
+    // font-size:18px;
+    width:150px;
+}
+
+.recipeDesc{
+    font-family:"Lato", sans-serif;
+    text-align:left;
+    width:70%;  
+    // font-size:16px;
+}
+
+.iconDiv{
+    width:30%;
+    height: 10%;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.recipeIcon{
+    height:30px;
+    width:30px;
+    object-fit:cover;
+}
+
+@media screen and (max-width:1024px){
+    #browse{
+        height:450%;
+    }
+}
